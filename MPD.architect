@@ -4,7 +4,16 @@
  <print-settings numCopies="1" zoom="1.0" pageNumbersPrinted="true" orientation="1" paperWidth="612.0" paperHeight="792.0" leftBorder="50.0" rightBorder="50.0" topBorder="50.0" bottomBorder="50.0" />
  <project-data-sources>
   <data-source id="DS0">
-   <property key="Logical" value="PlayPen Database" />
+   <property key="Connection Type" value="MySQL" />
+   <property key="Logical" value="(Target Database)" />
+   <property key="JDBC URL" value="jdbc:mysql://localhost:3306/OC_P6_Test" />
+   <property key="UID" value="root" />
+   <property key="PWD" value="06022018" />
+   <property key="ca.sqlpower.architect.etl.kettle.database" value="" />
+   <property key="ca.sqlpower.architect.etl.kettle.port" value="" />
+   <property key="ca.sqlpower.architect.etl.kettle.hostname" value="" />
+   <property key="ca.sqlpower.architect.etl.kettle.repos.login" value="" />
+   <property key="ca.sqlpower.architect.etl.kettle.repos.password" value="" />
   </data-source>
  </project-data-sources>
  <source-databases>
@@ -31,7 +40,7 @@
     <folder id="FOLTAB12" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
     </folder>
     <folder id="FOLTAB14" populated="true" name="Indices" physicalName="Indices" type="4">
-    <index id="IDX6" populated="true" UUID="c79977c8-1f84-4a26-9559-5250df04514d" clustered="false" name="Customer_pk" physicalName="Customer_pk" primaryKeyIndex="true" unique="false" >
+    <index id="IDX6" populated="true" UUID="c79977c8-1f84-4a26-9559-5250df04514d" clustered="false" name="Customer_pk" physicalName="customer_pk" primaryKeyIndex="true" unique="false" >
      <index-column id="IDC7" populated="true" UUID="4149f351-9f9c-474f-b595-1ad960e239bd" ascendingOrDescending="UNSPECIFIED" column-ref="COL2" name="id" physicalName="id" />
      <index-column id="IDC8" populated="true" UUID="2700cefd-c54d-487c-a3c4-26efa2fba545" ascendingOrDescending="UNSPECIFIED" column-ref="COL3" name="address_id" physicalName="address_id" />
     </index>
@@ -61,7 +70,7 @@
     <folder id="FOLTAB92" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
     </folder>
     <folder id="FOLTAB94" populated="true" name="Indices" physicalName="Indices" type="4">
-    <index id="IDX15" populated="true" UUID="95529df5-ef33-4100-b4be-010bb32ed664" clustered="false" name="Account_pk" physicalName="Account_pk" primaryKeyIndex="true" unique="false" >
+    <index id="IDX15" populated="true" UUID="95529df5-ef33-4100-b4be-010bb32ed664" clustered="false" name="Account_pk" physicalName="account_pk" primaryKeyIndex="true" unique="false" >
      <index-column id="IDC16" populated="true" UUID="03394467-4ab0-4f47-a9c5-7a00e20141b5" ascendingOrDescending="UNSPECIFIED" column-ref="COL10" name="id" physicalName="id" />
     </index>
    </folder>
@@ -96,7 +105,7 @@
     <folder id="FOLTAB172" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
     </folder>
     <folder id="FOLTAB174" populated="true" name="Indices" physicalName="Indices" type="4">
-    <index id="IDX25" populated="true" UUID="011983bd-98be-4e1e-8fd3-97a19afdcf96" clustered="false" name="Order_pk" physicalName="Order_pk" primaryKeyIndex="true" unique="false" >
+    <index id="IDX25" populated="true" UUID="011983bd-98be-4e1e-8fd3-97a19afdcf96" clustered="false" name="Order_pk" physicalName="order_pk" primaryKeyIndex="true" unique="false" >
      <index-column id="IDC26" populated="true" UUID="6c184973-892f-4965-9c05-ceaa45de048d" ascendingOrDescending="UNSPECIFIED" column-ref="COL18" name="id" physicalName="id" />
     </index>
    </folder>
@@ -119,7 +128,7 @@
     <folder id="FOLTAB272" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
     </folder>
     <folder id="FOLTAB274" populated="true" name="Indices" physicalName="Indices" type="4">
-    <index id="IDX31" populated="true" UUID="f1429f2f-08ad-4e15-a449-af8526e8b330" clustered="false" name="Pizza_pk" physicalName="Pizza_pk" primaryKeyIndex="true" unique="false" >
+    <index id="IDX31" populated="true" UUID="f1429f2f-08ad-4e15-a449-af8526e8b330" clustered="false" name="Pizza_pk" physicalName="pizza_pk" primaryKeyIndex="true" unique="false" >
      <index-column id="IDC32" populated="true" UUID="6bafcc31-375f-4de6-ae0d-b9003b5a23e8" ascendingOrDescending="UNSPECIFIED" column-ref="COL28" name="id" physicalName="id" />
     </index>
    </folder>
@@ -142,7 +151,7 @@
     <folder id="FOLTAB332" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
     </folder>
     <folder id="FOLTAB334" populated="true" name="Indices" physicalName="Indices" type="4">
-    <index id="IDX37" populated="true" UUID="a10ee314-0e92-404a-8844-8c8a51986b90" clustered="false" name="Ingredients_pk" physicalName="Ingredients_pk" primaryKeyIndex="true" unique="false" >
+    <index id="IDX37" populated="true" UUID="a10ee314-0e92-404a-8844-8c8a51986b90" clustered="false" name="Ingredients_pk" physicalName="ingredients_pk" primaryKeyIndex="true" unique="false" >
      <index-column id="IDC38" populated="true" UUID="f778a4a7-6db1-47a1-866b-60d0df4de1a4" ascendingOrDescending="UNSPECIFIED" column-ref="COL34" name="id" physicalName="id" />
     </index>
    </folder>
@@ -171,7 +180,7 @@
     <folder id="FOLTAB392" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
     </folder>
     <folder id="FOLTAB394" populated="true" name="Indices" physicalName="Indices" type="4">
-    <index id="IDX45" populated="true" UUID="23626cda-f9b4-4597-8445-78078f713e45" clustered="false" name="Restaurant_pk" physicalName="Restaurant_pk" primaryKeyIndex="true" unique="false" >
+    <index id="IDX45" populated="true" UUID="23626cda-f9b4-4597-8445-78078f713e45" clustered="false" name="Restaurant_pk" physicalName="restaurant_pk" primaryKeyIndex="true" unique="false" >
      <index-column id="IDC46" populated="true" UUID="ee0fa991-4eda-4b26-922b-06f7e23dd4e5" ascendingOrDescending="UNSPECIFIED" column-ref="COL40" name="id" physicalName="id" />
      <index-column id="IDC47" populated="true" UUID="850f3e21-5091-4bb3-95a1-dae29cedc309" ascendingOrDescending="UNSPECIFIED" column-ref="COL41" name="address_id" physicalName="address_id" />
     </index>
@@ -207,7 +216,7 @@
     <folder id="FOLTAB482" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
     </folder>
     <folder id="FOLTAB484" populated="true" name="Indices" physicalName="Indices" type="4">
-    <index id="IDX56" populated="true" UUID="e0e994f7-1d5c-4e25-b68b-91fc525d295d" clustered="false" name="Address_pk" physicalName="Address_pk" primaryKeyIndex="true" unique="false" >
+    <index id="IDX56" populated="true" UUID="e0e994f7-1d5c-4e25-b68b-91fc525d295d" clustered="false" name="Address_pk" physicalName="address_pk" primaryKeyIndex="true" unique="false" >
      <index-column id="IDC57" populated="true" UUID="015ec453-c151-4c17-9e5e-81382f38837f" ascendingOrDescending="UNSPECIFIED" column-ref="COL49" name="id" physicalName="id" />
     </index>
    </folder>
@@ -236,7 +245,7 @@
     <folder id="FOLTAB582" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
     </folder>
     <folder id="FOLTAB584" populated="true" name="Indices" physicalName="Indices" type="4">
-    <index id="IDX64" populated="true" UUID="6a934b73-68bb-48b1-a3a3-3fb5ea2c192b" clustered="false" name="Staff_pk" physicalName="Staff_pk" primaryKeyIndex="true" unique="false" >
+    <index id="IDX64" populated="true" UUID="6a934b73-68bb-48b1-a3a3-3fb5ea2c192b" clustered="false" name="Staff_pk" physicalName="staff_pk" primaryKeyIndex="true" unique="false" >
      <index-column id="IDC65" populated="true" UUID="d4023dd9-6727-4f79-b1ae-ef657f6140ce" ascendingOrDescending="UNSPECIFIED" column-ref="COL59" name="id" physicalName="id" />
      <index-column id="IDC66" populated="true" UUID="a7944b6f-928c-468e-b256-f4f863a6f1b7" ascendingOrDescending="UNSPECIFIED" column-ref="COL60" name="place_of_work_id" physicalName="place_of_work_id" />
      <index-column id="IDC67" populated="true" UUID="b9115763-4fe8-4e65-a607-5509ae8de386" ascendingOrDescending="UNSPECIFIED" column-ref="COL61" name="address_id" physicalName="address_id" />
@@ -258,7 +267,7 @@
     <folder id="FOLTAB682" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
     </folder>
     <folder id="FOLTAB684" populated="true" name="Indices" physicalName="Indices" type="4">
-    <index id="IDX71" populated="true" UUID="ce29c45c-8c04-402f-840d-b408241ada6c" clustered="false" name="Order_history_pk" physicalName="Order_history_pk" primaryKeyIndex="true" unique="false" >
+    <index id="IDX71" populated="true" UUID="ce29c45c-8c04-402f-840d-b408241ada6c" clustered="false" name="Order_history_pk" physicalName="order_history_pk" primaryKeyIndex="true" unique="false" >
      <index-column id="IDC72" populated="true" UUID="e5a644f9-adf6-4c2a-8061-b095f2db6624" ascendingOrDescending="UNSPECIFIED" column-ref="COL69" name="id" physicalName="id" />
      <index-column id="IDC73" populated="true" UUID="ceee2628-ea7e-47d9-a87c-0277fb06ef79" ascendingOrDescending="UNSPECIFIED" column-ref="COL70" name="order_number" physicalName="order_number" />
     </index>
@@ -282,7 +291,7 @@
     <folder id="FOLTAB742" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
     </folder>
     <folder id="FOLTAB744" populated="true" name="Indices" physicalName="Indices" type="4">
-    <index id="IDX78" populated="true" UUID="ec00916f-7266-4a2e-9d18-dfbfb9f740ee" clustered="false" name="Quantity_stocks_pk" physicalName="Quantity_stocks_pk" primaryKeyIndex="true" unique="false" >
+    <index id="IDX78" populated="true" UUID="ec00916f-7266-4a2e-9d18-dfbfb9f740ee" clustered="false" name="Quantity_stocks_pk" physicalName="quantity_stocks_pk" primaryKeyIndex="true" unique="false" >
      <index-column id="IDC79" populated="true" UUID="6d8bf961-c1c9-4879-935b-1e2dc395c327" ascendingOrDescending="UNSPECIFIED" column-ref="COL75" name="restaurant_id" physicalName="restaurant_id" />
      <index-column id="IDC80" populated="true" UUID="5c1ec52a-9fdc-41cc-80c3-f3107b6b515e" ascendingOrDescending="UNSPECIFIED" column-ref="COL76" name="ingredient_id" physicalName="ingredient_id" />
      <index-column id="IDC81" populated="true" UUID="290b3e3a-6ae8-4319-b77a-960205c0d792" ascendingOrDescending="UNSPECIFIED" column-ref="COL77" name="address_id" physicalName="address_id" />
@@ -307,54 +316,54 @@
     <folder id="FOLTAB822" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
     </folder>
     <folder id="FOLTAB824" populated="true" name="Indices" physicalName="Indices" type="4">
-    <index id="IDX86" populated="true" UUID="e7c4b938-b687-472d-a6d3-8f3fa1b80cb8" clustered="false" name="Recipe_pk" physicalName="Recipe_pk" primaryKeyIndex="true" unique="false" >
+    <index id="IDX86" populated="true" UUID="e7c4b938-b687-472d-a6d3-8f3fa1b80cb8" clustered="false" name="Recipe_pk" physicalName="recipe_pk" primaryKeyIndex="true" unique="false" >
      <index-column id="IDC87" populated="true" UUID="fe8a10ce-3371-4143-96a2-5b951f6f07bf" ascendingOrDescending="UNSPECIFIED" column-ref="COL83" name="pizza_id" physicalName="pizza_id" />
      <index-column id="IDC88" populated="true" UUID="bb49c63b-48d5-4591-a7bc-051717cc7897" ascendingOrDescending="UNSPECIFIED" column-ref="COL84" name="ingredient_id" physicalName="ingredient_id" />
     </index>
    </folder>
   </table>
   <relationships>
-   <relationship id="REL89" populated="true" UUID="471b2a0a-28f2-461d-9836-e19c3a2d6c9f" deferrability="7" deleteRule="3" fk-table-ref="TAB58" fkCardinality="7" identifying="true" name="Account_Staff_fk" physicalName="Account_Staff_fk" pk-table-ref="TAB9" pkCardinality="2" updateRule="3" >
+   <relationship id="REL89" populated="true" UUID="471b2a0a-28f2-461d-9836-e19c3a2d6c9f" deferrability="7" deleteRule="3" fk-table-ref="TAB58" fkCardinality="7" identifying="true" name="Account_Staff_fk" physicalName="account_staff_fk" pk-table-ref="TAB9" pkCardinality="2" updateRule="3" >
     <column-mapping id="CMP90" populated="true" UUID="2439c305-0847-48e0-958b-aefd8e08c0c4" fk-column-ref="COL59" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL10" />
    </relationship>
-   <relationship id="REL91" populated="true" UUID="098fbfd3-6345-45a9-9b91-5fcf35abfd65" deferrability="7" deleteRule="3" fk-table-ref="TAB1" fkCardinality="7" identifying="true" name="Account_Customer_fk" physicalName="Account_Customer_fk" pk-table-ref="TAB9" pkCardinality="2" updateRule="3" >
+   <relationship id="REL91" populated="true" UUID="098fbfd3-6345-45a9-9b91-5fcf35abfd65" deferrability="7" deleteRule="3" fk-table-ref="TAB1" fkCardinality="7" identifying="true" name="Account_Customer_fk" physicalName="account_customer_fk" pk-table-ref="TAB9" pkCardinality="2" updateRule="3" >
     <column-mapping id="CMP92" populated="true" UUID="4f365cc9-4150-4a7d-8084-006de47cfa12" fk-column-ref="COL2" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL10" />
    </relationship>
-   <relationship id="REL93" populated="true" UUID="fb62e03d-6578-4e30-bc6b-853c7b2f3abd" deferrability="7" deleteRule="3" fk-table-ref="TAB68" fkCardinality="7" identifying="true" name="Account_Order_history_fk" physicalName="Account_Order_history_fk" pk-table-ref="TAB9" pkCardinality="2" updateRule="3" >
+   <relationship id="REL93" populated="true" UUID="fb62e03d-6578-4e30-bc6b-853c7b2f3abd" deferrability="7" deleteRule="3" fk-table-ref="TAB68" fkCardinality="7" identifying="true" name="Account_Order_history_fk" physicalName="account_order_history_fk" pk-table-ref="TAB9" pkCardinality="2" updateRule="3" >
     <column-mapping id="CMP94" populated="true" UUID="72d0c93c-f145-4bee-b90b-788c73e7a791" fk-column-ref="COL69" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL10" />
    </relationship>
-   <relationship id="REL95" populated="true" UUID="ffc78b2f-51d3-41d9-a5a4-967af4e81466" deferrability="7" deleteRule="3" fk-table-ref="TAB68" fkCardinality="7" identifying="true" name="Order_Order_history_fk" physicalName="Order_Order_history_fk" pk-table-ref="TAB17" pkCardinality="2" updateRule="3" >
+   <relationship id="REL95" populated="true" UUID="ffc78b2f-51d3-41d9-a5a4-967af4e81466" deferrability="7" deleteRule="3" fk-table-ref="TAB68" fkCardinality="7" identifying="true" name="Order_Order_history_fk" physicalName="order_order_history_fk" pk-table-ref="TAB17" pkCardinality="2" updateRule="3" >
     <column-mapping id="CMP96" populated="true" UUID="de122d9e-543e-41a3-9dae-d023477020a3" fk-column-ref="COL70" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL18" />
    </relationship>
-   <relationship id="REL97" populated="true" UUID="559cb190-1ea0-4eff-ae38-ccef5e185f53" deferrability="7" deleteRule="3" fk-table-ref="TAB82" fkCardinality="7" identifying="true" name="Pizza_Recipe_fk" physicalName="Pizza_Recipe_fk" pk-table-ref="TAB27" pkCardinality="2" updateRule="3" >
+   <relationship id="REL97" populated="true" UUID="559cb190-1ea0-4eff-ae38-ccef5e185f53" deferrability="7" deleteRule="3" fk-table-ref="TAB82" fkCardinality="7" identifying="true" name="Pizza_Recipe_fk" physicalName="pizza_recipe_fk" pk-table-ref="TAB27" pkCardinality="2" updateRule="3" >
     <column-mapping id="CMP98" populated="true" UUID="3eba0b6d-3a91-41e2-95fb-3cf197dd85c4" fk-column-ref="COL83" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL28" />
    </relationship>
-   <relationship id="REL99" populated="true" UUID="07021d30-6f2c-47d6-a39f-4ce173071f71" deferrability="7" deleteRule="3" fk-table-ref="TAB17" fkCardinality="7" identifying="true" name="Pizza_Order_fk" physicalName="Pizza_Order_fk" pk-table-ref="TAB27" pkCardinality="2" updateRule="3" >
+   <relationship id="REL99" populated="true" UUID="07021d30-6f2c-47d6-a39f-4ce173071f71" deferrability="7" deleteRule="3" fk-table-ref="TAB17" fkCardinality="7" identifying="true" name="Pizza_Order_fk" physicalName="pizza_order_fk" pk-table-ref="TAB27" pkCardinality="2" updateRule="3" >
     <column-mapping id="CMP100" populated="true" UUID="6d7abd83-6d28-44c6-944a-3499e244fd7a" fk-column-ref="COL19" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL28" />
    </relationship>
-   <relationship id="REL101" populated="true" UUID="88d1ba4e-1688-4ec9-8298-9eeff6d325bc" deferrability="7" deleteRule="3" fk-table-ref="TAB74" fkCardinality="7" identifying="true" name="Ingredients_Quantity_stocks_fk" physicalName="Ingredients_Quantity_stocks_fk" pk-table-ref="TAB33" pkCardinality="2" updateRule="3" >
+   <relationship id="REL101" populated="true" UUID="88d1ba4e-1688-4ec9-8298-9eeff6d325bc" deferrability="7" deleteRule="3" fk-table-ref="TAB74" fkCardinality="7" identifying="true" name="Ingredients_Quantity_stocks_fk" physicalName="ingredients_quantity_stocks_fk" pk-table-ref="TAB33" pkCardinality="2" updateRule="3" >
     <column-mapping id="CMP102" populated="true" UUID="fe622cdf-43db-4448-bf25-3accff9999a7" fk-column-ref="COL76" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL34" />
    </relationship>
-   <relationship id="REL103" populated="true" UUID="3be6c13e-f0ce-411c-b459-b5ae58988ad5" deferrability="7" deleteRule="3" fk-table-ref="TAB82" fkCardinality="7" identifying="true" name="Ingredients_Recipe_fk" physicalName="Ingredients_Recipe_fk" pk-table-ref="TAB33" pkCardinality="2" updateRule="3" >
+   <relationship id="REL103" populated="true" UUID="3be6c13e-f0ce-411c-b459-b5ae58988ad5" deferrability="7" deleteRule="3" fk-table-ref="TAB82" fkCardinality="7" identifying="true" name="Ingredients_Recipe_fk" physicalName="ingredients_recipe_fk" pk-table-ref="TAB33" pkCardinality="2" updateRule="3" >
     <column-mapping id="CMP104" populated="true" UUID="61b0fd63-0c94-4b53-89f3-34dd1e75720b" fk-column-ref="COL84" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL34" />
    </relationship>
-   <relationship id="REL105" populated="true" UUID="f1acd3fd-23a5-4768-857f-5cde2987c5a1" deferrability="7" deleteRule="3" fk-table-ref="TAB58" fkCardinality="7" identifying="true" name="Restaurant_Staff_fk" physicalName="Restaurant_Staff_fk" pk-table-ref="TAB39" pkCardinality="2" updateRule="3" >
+   <relationship id="REL105" populated="true" UUID="f1acd3fd-23a5-4768-857f-5cde2987c5a1" deferrability="7" deleteRule="3" fk-table-ref="TAB58" fkCardinality="7" identifying="true" name="Restaurant_Staff_fk" physicalName="restaurant_staff_fk" pk-table-ref="TAB39" pkCardinality="2" updateRule="3" >
     <column-mapping id="CMP106" populated="true" UUID="cd49d2dd-8930-471e-b60b-91c321f5ff41" fk-column-ref="COL60" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL40" />
     <column-mapping id="CMP107" populated="true" UUID="95aa499a-d901-45e5-a0f3-77218a4233dc" fk-column-ref="COL61" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL41" />
    </relationship>
-   <relationship id="REL108" populated="true" UUID="068e3510-04d9-408f-9bbc-cf8e72ea38cb" deferrability="7" deleteRule="3" fk-table-ref="TAB74" fkCardinality="7" identifying="true" name="Restaurant_Quantity_stocks_fk" physicalName="Restaurant_Quantity_stocks_fk" pk-table-ref="TAB39" pkCardinality="2" updateRule="3" >
+   <relationship id="REL108" populated="true" UUID="068e3510-04d9-408f-9bbc-cf8e72ea38cb" deferrability="7" deleteRule="3" fk-table-ref="TAB74" fkCardinality="7" identifying="true" name="Restaurant_Quantity_stocks_fk" physicalName="restaurant_quantity_stocks_fk" pk-table-ref="TAB39" pkCardinality="2" updateRule="3" >
     <column-mapping id="CMP109" populated="true" UUID="3b484599-f58c-44f0-8557-2c3e84c8ec03" fk-column-ref="COL75" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL40" />
     <column-mapping id="CMP110" populated="true" UUID="1e59a046-da57-499f-b912-84ccd8447074" fk-column-ref="COL77" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL41" />
    </relationship>
-   <relationship id="REL111" populated="true" UUID="bbdba61b-dbbe-46df-91af-f452b1687fc1" deferrability="7" deleteRule="3" fk-table-ref="TAB1" fkCardinality="7" identifying="true" name="Address_Customer_fk" physicalName="Address_Customer_fk" pk-table-ref="TAB48" pkCardinality="2" updateRule="3" >
+   <relationship id="REL111" populated="true" UUID="bbdba61b-dbbe-46df-91af-f452b1687fc1" deferrability="7" deleteRule="3" fk-table-ref="TAB1" fkCardinality="7" identifying="true" name="Address_Customer_fk" physicalName="address_customer_fk" pk-table-ref="TAB48" pkCardinality="2" updateRule="3" >
     <column-mapping id="CMP112" populated="true" UUID="78814775-0bc1-40bd-be93-e47c77169fd4" fk-column-ref="COL3" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL49" />
    </relationship>
-   <relationship id="REL113" populated="true" UUID="78c10a19-8380-4129-84a2-b4d8c94cfb78" deferrability="7" deleteRule="3" fk-table-ref="TAB39" fkCardinality="7" identifying="true" name="Address_Restaurant_fk" physicalName="Address_Restaurant_fk" pk-table-ref="TAB48" pkCardinality="2" updateRule="3" >
+   <relationship id="REL113" populated="true" UUID="78c10a19-8380-4129-84a2-b4d8c94cfb78" deferrability="7" deleteRule="3" fk-table-ref="TAB39" fkCardinality="7" identifying="true" name="Address_Restaurant_fk" physicalName="address_restaurant_fk" pk-table-ref="TAB48" pkCardinality="2" updateRule="3" >
     <column-mapping id="CMP114" populated="true" UUID="647482e7-a3ae-48e3-af8b-00000f6dd74b" fk-column-ref="COL41" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL49" />
    </relationship>
   </relationships>
  </target-database>
- <ddl-generator type="ca.sqlpower.architect.ddl.GenericDDLGenerator" allow-connection="true"> </ddl-generator>
+ <ddl-generator type="ca.sqlpower.architect.ddl.PostgresDDLGenerator" allow-connection="false" target-schema="OC_P6_Test"> </ddl-generator>
  <liquibase-settings useSeparateChangeSets="false" generateId="false" idStart="1"/>
  <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
  <play-pen zoom="1.4142135623730947" viewportX="0" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
