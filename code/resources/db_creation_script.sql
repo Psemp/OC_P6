@@ -87,6 +87,8 @@ CREATE TABLE OC_P6_Test.Staff (
                 place_of_work_id INTEGER NOT NULL,
                 address_id INTEGER NOT NULL,
                 role VARCHAR NOT NULL,
+                first_name VARCHAR NOT NULL,
+                last_name VARCHAR NOT NULL,
                 is_on_shift BOOLEAN NOT NULL,
                 CONSTRAINT staff_pk PRIMARY KEY (id, place_of_work_id, address_id)
 );
