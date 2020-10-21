@@ -1,0 +1,9 @@
+﻿id;street_name;street_nbr;city;zip;is_restaurant;comment
+1;Emerson Plaza;31;New-York;07630;False;Emerson Hotel - Room 607
+2;5th Ave At 23rd St;175;New-York;07630;True;West VII Pizza
+3;Milburn ave.;39000;Philadelphia;42101;False;J.D. Peoples Mental Hospital
+4;New Brunswick ave.;530;New-York;07630;False;Raritan Research Laboratory
+5;Elfreths Aly;126;Philadelphia;42101;True;Markridge-Group_Pizza
+6;Jefferson Dr SW;1000;Washington DC;20510;True;Titan_Pizzeria
+7;Capitol Driveway NW;1;Washington DC;20510;False;Senator Royce's office
+8;South 52nd Street;113;Philadelphia;42101;False;

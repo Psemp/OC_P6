@@ -1,0 +1,12 @@
+﻿id;pizza_id;date_ordered;is_paid;is_delivery;stage;cx_comment
+1;"2;4";16/01/2015;True;True;Delivered;
+2;4;23/01/2015;True;True;Delivered;Add 13 olives
+3;1;13/03/1947;True;True;Delivered;Pick me a pack of cigarrettes please
+4;"2;5";20/06/1961;True;True;Delivered;Send me a whiskey sour as well, thanks
+5;"4;4";16/01/2015;True;True;Delivered;Leave order at secretary desk
+6;"2;3";07/10/2020;True;False;Delivered;
+7;1;06/02/1957;False;False;Unclaimed;No olives
+8;4;01/01/2014;True;True;Delivered;
+9;4;20/03/2015;True;True;Delivered;
+10;"1;5";23/05/1975;True;True;Delivered;Whiskey sour and make the margherita extra spicy for my friend Ramse
+11;"1;2;4";22/02/2043;False;True;Pre-Ordered;2 packs of smokes, and have Hannah deliver it please

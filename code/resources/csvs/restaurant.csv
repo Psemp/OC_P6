@@ -1,0 +1,4 @@
+﻿id;address_id;name;phone_nbr;is_open
+1;2;West-VII_OCP;630-555-1511;True
+2;5;Markridge-Group_Pizza;101-555-1579;True
+3;6;Titan_OCP;510-555-1709;False

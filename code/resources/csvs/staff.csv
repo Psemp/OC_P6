@@ -1,0 +1,15 @@
+﻿id;first_name;last_name;restaurant_address_id;role;is_on_shift
+16;Theodore;Deacon;1;Manager;True
+6;Leland;Frost;2;Manager;True
+5;Olivia;Kirschner;3;Manager;False
+15;Oliver;Peter;1;Cooks;True
+8;Julian;Adler;2;Cooks;True
+7;Vivan;Rutledge;3;Cooks;False
+9;Aaron;Marker;3;Cashier;False
+10;Robert;Gale;1;Cashier;True
+19;Jose;Ramse;2;Cashier;False
+17;Marcus;Whitley;1;Cashier;False
+18;Jonathan;Foster;2;Cashier;True
+2;Kyle;Slade;1;Delivery;True
+13;Hannah;Jones;2;Delivery;True
+12;Henri;Toussaint;3;Delivery;False
