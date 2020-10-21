@@ -1,0 +1,75 @@
+{"adress": [
+ {
+   "id": 1,
+   "street_name": "Emerson Plaza",
+   "street_nbr": 31,
+   "city": "New-York",
+   "zip": 7630,
+   "is_restaurant": false,
+   "comment": "Emerson Hotel - Room 607"
+ },
+ {
+   "id": 2,
+   "street_name": "5th Ave At 23rd St",
+   "street_nbr": 175,
+   "city": "New-York",
+   "zip": 7630,
+   "is_restaurant": true,
+   "comment": "West VII Pizza"
+ },
+ {
+   "id": 3,
+   "street_name": "Milburn ave.",
+   "street_nbr": 39000,
+   "city": "Philadelphia",
+   "zip": 42101,
+   "is_restaurant": false,
+   "comment": "J.D. Peoples Mental Hospital"
+ },
+ {
+   "id": 4,
+   "street_name": "New Brunswick ave.",
+   "street_nbr": 530,
+   "city": "New-York",
+   "zip": 7630,
+   "is_restaurant": false,
+   "comment": "Raritan Research Laboratory"
+ },
+ {
+   "id": 5,
+   "street_name": "Elfreths Aly",
+   "street_nbr": 126,
+   "city": "Philadelphia",
+   "zip": 42101,
+   "is_restaurant": true,
+   "comment": "Markridge-Group_Pizza"
+ },
+ {
+   "id": 6,
+   "street_name": "Jefferson Dr SW",
+   "street_nbr": 1000,
+   "city": "Washington DC",
+   "zip": 20510,
+   "is_restaurant": true,
+   "comment": "Titan_Pizzeria"
+ },
+ {
+   "id": 7,
+   "street_name": "Capitol Driveway NW",
+   "street_nbr": 1,
+   "city": "Washington DC",
+   "zip": 20510,
+   "is_restaurant": false,
+   "comment": "Senator Royce's office"
+ },
+ {
+   "id": 8,
+   "street_name": "South 52nd Street",
+   "street_nbr": 113,
+   "city": "Philadelphia",
+   "zip": 42101,
+   "is_restaurant": false,
+   "comment": ""
+ }
+]
+}
