@@ -17,7 +17,7 @@ CREATE TABLE OC_P6_Test.Restaurant (
                 name VARCHAR NOT NULL,
                 phone_number INTEGER NOT NULL,
                 is_open BOOLEAN NOT NULL,
-                CONSTRAINT restaurant_pk PRIMARY KEY (id, address_id)
+                CONSTRAINT restaurant_pk PRIMARY KEY (id)
 );
 
 
@@ -32,8 +32,7 @@ CREATE TABLE OC_P6_Test.Ingredients (
 CREATE TABLE OC_P6_Test.Quantity_stocks (
                 restaurant_id INTEGER NOT NULL,
                 ingredient_id INTEGER NOT NULL,
-                address_id INTEGER NOT NULL,
-                CONSTRAINT quantity_stocks_pk PRIMARY KEY (restaurant_id, ingredient_id, address_id)
+                CONSTRAINT quantity_stocks_pk PRIMARY KEY (restaurant_id, ingredient_id)
 );
 
 
@@ -85,12 +84,11 @@ CREATE TABLE OC_P6_Test.Order_history (
 CREATE TABLE OC_P6_Test.Staff (
                 id INTEGER NOT NULL,
                 place_of_work_id INTEGER NOT NULL,
-                address_id INTEGER NOT NULL,
                 role VARCHAR NOT NULL,
                 first_name VARCHAR NOT NULL,
                 last_name VARCHAR NOT NULL,
                 is_on_shift BOOLEAN NOT NULL,
-                CONSTRAINT staff_pk PRIMARY KEY (id, place_of_work_id, address_id)
+                CONSTRAINT staff_pk PRIMARY KEY (id)
 );
 
 
@@ -99,7 +97,7 @@ CREATE TABLE OC_P6_Test.Customer (
                 address_id INTEGER NOT NULL,
                 first_name VARCHAR NOT NULL,
                 last_name VARCHAR NOT NULL,
-                CONSTRAINT customer_pk PRIMARY KEY (id, address_id)
+                CONSTRAINT customer_pk PRIMARY KEY (id)
 );
 
 
@@ -118,15 +116,15 @@ ON UPDATE NO ACTION
 NOT DEFERRABLE;
 
 ALTER TABLE OC_P6_Test.Staff ADD CONSTRAINT restaurant_staff_fk
-FOREIGN KEY (place_of_work_id, address_id)
-REFERENCES OC_P6_Test.Restaurant (id, address_id)
+FOREIGN KEY (place_of_work_id)
+REFERENCES OC_P6_Test.Restaurant (id)
 ON DELETE NO ACTION
 ON UPDATE NO ACTION
 NOT DEFERRABLE;
 
 ALTER TABLE OC_P6_Test.Quantity_stocks ADD CONSTRAINT restaurant_quantity_stocks_fk
-FOREIGN KEY (restaurant_id, address_id)
-REFERENCES OC_P6_Test.Restaurant (id, address_id)
+FOREIGN KEY (restaurant_id)
+REFERENCES OC_P6_Test.Restaurant (id)
 ON DELETE NO ACTION
 ON UPDATE NO ACTION
 NOT DEFERRABLE;
