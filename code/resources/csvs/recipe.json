@@ -1,0 +1,29 @@
+{
+  "recipe": [
+    {
+      "pizza_id": 1,
+      "ingredient_id": "1;2",
+      "recipe_webpage": "https://www.seashepherd.fr/"
+    },
+    {
+      "pizza_id": 2,
+      "ingredient_id": "1;2;3;4",
+      "recipe_webpage": "https://www.seashepherd.fr/"
+    },
+    {
+      "pizza_id": 3,
+      "ingredient_id": "1;4",
+      "recipe_webpage": "https://www.seashepherd.fr/"
+    },
+    {
+      "pizza_id": 4,
+      "ingredient_id": "1;2;3",
+      "recipe_webpage": "https://www.seashepherd.fr/"
+    },
+    {
+      "pizza_id": 5,
+      "ingredient_id": "1;2",
+      "recipe_webpage": "https://www.seashepherd.fr/"
+    }
+  ]
+}
