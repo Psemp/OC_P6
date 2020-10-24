@@ -19,7 +19,7 @@ def Insert_data(mycursor, ObjectList1, ObjectList2, cnx):
 
 def Better_insert_data(cursor, ObjectList, target_table, cols, val_names, cnx):
     for element in ObjectList:
-        data_insertion = f"""INSERT INTO {target_table}
-        ({cols})
-        VALUES({vals})"""
-        vals = something
+            data_insertion = f"""INSERT INTO {target_table}
+            ({cols})
+            VALUES({vals})"""
+            vals = something
