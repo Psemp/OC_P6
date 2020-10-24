@@ -1,34 +1,670 @@
 {
-    "customer": [
-      {
-        "id": 1,
-        "address_id": 1,
-        "first_name": "James",
-        "last_name": "Cole"
-      },
-      {
-        "id": 14,
-        "address_id": 8,
-        "first_name": "Cassandra",
-        "last_name": "Railly"
-      },
-      {
-        "id": 4,
-        "address_id": 4,
-        "first_name": "Katarina",
-        "last_name": "Jones"
-      },
-      {
-        "id": 3,
-        "address_id": 3,
-        "first_name": "Jennifer",
-        "last_name": "Goines"
-      },
-      {
-        "id": 11,
-        "address_id": 7,
-        "first_name": "William",
-        "last_name": "Royce"
-      }
-    ]
-  }
+  "account": [
+    {
+      "id": 1,
+      "type": "Cx",
+      "phone_number": "630-555-1087",
+      "email": "james.cole@somemail.com",
+      "pwd_hash": "some_hash_software_created"
+    },
+    {
+      "id": 2,
+      "type": "Staff",
+      "phone_number": "630-555-1319",
+      "email": "kyle.slade@mental.com",
+      "pwd_hash": "some_hash_software_created"
+    },
+    {
+      "id": 3,
+      "type": "Cx",
+      "phone_number": "101-555-1399",
+      "email": "jennifer.goines@primary.com",
+      "pwd_hash": "some_hash_software_created"
+    },
+    {
+      "id": 4,
+      "type": "Cx",
+      "phone_number": "630-555-1663",
+      "email": "katarina.wagner@something.ger",
+      "pwd_hash": "some_hash_software_created"
+    },
+    {
+      "id": 5,
+      "type": "Staff",
+      "phone_number": "510-555-1951",
+      "email": "olivia.kirschner@witness.com",
+      "pwd_hash": "some_hash_software_created"
+    },
+    {
+      "id": 6,
+      "type": "Staff",
+      "phone_number": "101-555-1453",
+      "email": "leland.frost@markridge.gouv",
+      "pwd_hash": "some_hash_software_created"
+    },
+    {
+      "id": 7,
+      "type": "Staff",
+      "phone_number": "510-555-9109",
+      "email": "mantis@fakemail.com",
+      "pwd_hash": "some_hash_software_created"
+    },
+    {
+      "id": 8,
+      "type": "Staff",
+      "phone_number": "101-555-1301",
+      "email": "julian.adler@mit-edu.com",
+      "pwd_hash": "some_hash_software_created"
+    },
+    {
+      "id": 9,
+      "type": "Staff",
+      "phone_number": "510-555-9973",
+      "email": "marker.aaron@fake-senate.gouv",
+      "pwd_hash": "some_hash_software_created"
+    },
+    {
+      "id": 10,
+      "type": "Staff",
+      "phone_number": "630-555-1949",
+      "email": "robet_gale@fbi.gouv",
+      "pwd_hash": "some_hash_software_created"
+    },
+    {
+      "id": 11,
+      "type": "Cx",
+      "phone_number": "510-555-9059",
+      "email": "sen.royce@senate.gouv",
+      "pwd_hash": "some_hash_software_created"
+    },
+    {
+      "id": 12,
+      "type": "Staff",
+      "phone_number": "510-555-2003",
+      "email": "henri_toussaint@cdc.org",
+      "pwd_hash": "some_hash_software_created"
+    },
+    {
+      "id": 13,
+      "type": "Staff",
+      "phone_number": "101-555-9511",
+      "email": "hannah_jones@zeit.ger",
+      "pwd_hash": "some_hash_software_created"
+    },
+    {
+      "id": 14,
+      "type": "Cx",
+      "phone_number": "101-555-9743",
+      "email": "cassie@cdc.org",
+      "pwd_hash": "some_hash_software_created"
+    },
+    {
+      "id": 15,
+      "type": "Staff",
+      "phone_number": "630-555-1811",
+      "email": "peters.o@markridge.gouv",
+      "pwd_hash": "some_hash_software_created"
+    },
+    {
+      "id": 16,
+      "type": "Staff",
+      "phone_number": "630-555-9199",
+      "email": "deacon@west7.com",
+      "pwd_hash": "some_hash_software_created"
+    },
+    {
+      "id": 17,
+      "type": "Staff",
+      "phone_number": "630-555-9391",
+      "email": "ssg.whitley@spearhead.org",
+      "pwd_hash": "some_hash_software_created"
+    },
+    {
+      "id": 18,
+      "type": "Staff",
+      "phone_number": "101-555-1997",
+      "email": "col.jonathan_foster@spearhead.com",
+      "pwd_hash": "some_hash_software_created"
+    },
+    {
+      "id": 19,
+      "type": "Staff",
+      "phone_number": "101-555-1787",
+      "email": "jose_ramse@bff.com",
+      "pwd_hash": "some_hash_software_created"
+    }
+  ],
+  "address": [
+    {
+      "id": 1,
+      "street_name": "Emerson Plaza",
+      "street_nbr": 31,
+      "city": "New-York",
+      "zip": 7630,
+      "is_restaurant": false,
+      "comment": "Emerson Hotel - Room 607"
+    },
+    {
+      "id": 2,
+      "street_name": "5th Ave At 23rd St",
+      "street_nbr": 175,
+      "city": "New-York",
+      "zip": 7630,
+      "is_restaurant": true,
+      "comment": "West VII Pizza"
+    },
+    {
+      "id": 3,
+      "street_name": "Milburn ave.",
+      "street_nbr": 39000,
+      "city": "Philadelphia",
+      "zip": 42101,
+      "is_restaurant": false,
+      "comment": "J.D. Peoples Mental Hospital"
+    },
+    {
+      "id": 4,
+      "street_name": "New Brunswick ave.",
+      "street_nbr": 530,
+      "city": "New-York",
+      "zip": 7630,
+      "is_restaurant": false,
+      "comment": "Raritan Research Laboratory"
+    },
+    {
+      "id": 5,
+      "street_name": "Elfreths Aly",
+      "street_nbr": 126,
+      "city": "Philadelphia",
+      "zip": 42101,
+      "is_restaurant": true,
+      "comment": "Markridge-Group_Pizza"
+    },
+    {
+      "id": 6,
+      "street_name": "Jefferson Dr SW",
+      "street_nbr": 1000,
+      "city": "Washington DC",
+      "zip": 20510,
+      "is_restaurant": true,
+      "comment": "Titan_Pizzeria"
+    },
+    {
+      "id": 7,
+      "street_name": "Capitol Driveway NW",
+      "street_nbr": 1,
+      "city": "Washington DC",
+      "zip": 20510,
+      "is_restaurant": false,
+      "comment": "Senator Royce's office"
+    },
+    {
+      "id": 8,
+      "street_name": "South 52nd Street",
+      "street_nbr": 113,
+      "city": "Philadelphia",
+      "zip": 42101,
+      "is_restaurant": false,
+      "comment": ""
+    }
+  ],
+  "customer": [
+    {
+      "id": 1,
+      "address_id": 1,
+      "first_name": "James",
+      "last_name": "Cole"
+    },
+    {
+      "id": 14,
+      "address_id": 8,
+      "first_name": "Cassandra",
+      "last_name": "Railly"
+    },
+    {
+      "id": 4,
+      "address_id": 4,
+      "first_name": "Katarina",
+      "last_name": "Jones"
+    },
+    {
+      "id": 3,
+      "address_id": 3,
+      "first_name": "Jennifer",
+      "last_name": "Goines"
+    },
+    {
+      "id": 11,
+      "address_id": 7,
+      "first_name": "William",
+      "last_name": "Royce"
+    }
+  ],
+  "ingredients": [
+    {
+      "id": 1,
+      "name": "tomato_sauce",
+      "price": "1"
+    },
+    {
+      "id": 2,
+      "name": "cheese",
+      "price": "1,2"
+    },
+    {
+      "id": 3,
+      "name": "ham",
+      "price": "1,6"
+    },
+    {
+      "id": 4,
+      "name": "olives",
+      "price": "1,5"
+    },
+    {
+      "id": 5,
+      "name": "cream",
+      "price": "1,9"
+    }
+  ],
+  "order": [
+    {
+      "id": 1,
+      "pizza_id": "2;4",
+      "date_ordered": "16/01/2015",
+      "is_paid": true,
+      "is_delivery": true,
+      "stage": "Delivered",
+      "cx_comment": ""
+    },
+    {
+      "id": 2,
+      "pizza_id": "4",
+      "date_ordered": "23/01/2015",
+      "is_paid": true,
+      "is_delivery": true,
+      "stage": "Delivered",
+      "cx_comment": "Add 13 olives"
+    },
+    {
+      "id": 3,
+      "pizza_id": "1",
+      "date_ordered": "13/03/1947",
+      "is_paid": true,
+      "is_delivery": true,
+      "stage": "Delivered",
+      "cx_comment": "Pick me a pack of cigarrettes please"
+    },
+    {
+      "id": 4,
+      "pizza_id": "2;5",
+      "date_ordered": "20/06/1961",
+      "is_paid": true,
+      "is_delivery": true,
+      "stage": "Delivered",
+      "cx_comment": "Send me a whiskey sour as well, thanks"
+    },
+    {
+      "id": 5,
+      "pizza_id": "4;4",
+      "date_ordered": "16/01/2015",
+      "is_paid": true,
+      "is_delivery": true,
+      "stage": "Delivered",
+      "cx_comment": "Leave order at secretary desk"
+    },
+    {
+      "id": 6,
+      "pizza_id": "2;3",
+      "date_ordered": "07/10/2020",
+      "is_paid": true,
+      "is_delivery": false,
+      "stage": "Delivered",
+      "cx_comment": ""
+    },
+    {
+      "id": 7,
+      "pizza_id": "1",
+      "date_ordered": "06/02/1957",
+      "is_paid": false,
+      "is_delivery": false,
+      "stage": "Unclaimed",
+      "cx_comment": "No olives"
+    },
+    {
+      "id": 8,
+      "pizza_id": "4",
+      "date_ordered": "01/01/2014",
+      "is_paid": true,
+      "is_delivery": true,
+      "stage": "Delivered",
+      "cx_comment": ""
+    },
+    {
+      "id": 9,
+      "pizza_id": "4",
+      "date_ordered": "20/03/2015",
+      "is_paid": true,
+      "is_delivery": true,
+      "stage": "Delivered",
+      "cx_comment": ""
+    },
+    {
+      "id": 10,
+      "pizza_id": "1;5",
+      "date_ordered": "23/05/1975",
+      "is_paid": true,
+      "is_delivery": true,
+      "stage": "Delivered",
+      "cx_comment": "Whiskey sour and make the margherita extra spicy for my friend Ramse"
+    },
+    {
+      "id": 11,
+      "pizza_id": "1;2;4",
+      "date_ordered": "22/02/2043",
+      "is_paid": false,
+      "is_delivery": true,
+      "stage": "Pre-Ordered",
+      "cx_comment": "2 packs of smokes, and have Hannah deliver it please"
+    }
+  ],
+  "order_history": [
+    {
+      "account_id": 4,
+      "order_nbr": 3
+    },
+    {
+      "account_id": 19,
+      "order_nbr": 7
+    },
+    {
+      "account_id": 1,
+      "order_nbr": 4
+    },
+    {
+      "account_id": 1,
+      "order_nbr": 10
+    },
+    {
+      "account_id": 3,
+      "order_nbr": 8
+    },
+    {
+      "account_id": 8,
+      "order_nbr": 1
+    },
+    {
+      "account_id": 3,
+      "order_nbr": 2
+    },
+    {
+      "account_id": 7,
+      "order_nbr": 9
+    },
+    {
+      "account_id": 7,
+      "order_nbr": 5
+    },
+    {
+      "account_id": 10,
+      "order_nbr": 6
+    },
+    {
+      "account_id": 4,
+      "order_nbr": 11
+    }
+  ],
+  "pizza": [
+    {
+      "id": 1,
+      "name": "Margherita",
+      "price": 7
+    },
+    {
+      "id": 2,
+      "name": "4 seasons",
+      "price": 11
+    },
+    {
+      "id": 3,
+      "name": "Veggie",
+      "price": 13
+    },
+    {
+      "id": 4,
+      "name": "Reina",
+      "price": 13
+    },
+    {
+      "id": 5,
+      "name": "4 fromaggi",
+      "price": 11
+    }
+  ],
+  "recipe": [
+    {
+      "pizza_id": 1,
+      "ingredient_id": "1;2",
+      "recipe_webpage": "https://www.seashepherd.fr/"
+    },
+    {
+      "pizza_id": 2,
+      "ingredient_id": "1;2;3;4",
+      "recipe_webpage": "https://www.seashepherd.fr/"
+    },
+    {
+      "pizza_id": 3,
+      "ingredient_id": "1;4",
+      "recipe_webpage": "https://www.seashepherd.fr/"
+    },
+    {
+      "pizza_id": 4,
+      "ingredient_id": "1;2;3",
+      "recipe_webpage": "https://www.seashepherd.fr/"
+    },
+    {
+      "pizza_id": 5,
+      "ingredient_id": "1;2",
+      "recipe_webpage": "https://www.seashepherd.fr/"
+    }
+  ],
+  "staff": [
+    {
+      "id": 16,
+      "first_name": "Theodore",
+      "last_name": "Deacon",
+      "restaurant_address_id": 1,
+      "role": "Manager",
+      "is_on_shift": true
+    },
+    {
+      "id": 6,
+      "first_name": "Leland",
+      "last_name": "Frost",
+      "restaurant_address_id": 2,
+      "role": "Manager",
+      "is_on_shift": true
+    },
+    {
+      "id": 5,
+      "first_name": "Olivia",
+      "last_name": "Kirschner",
+      "restaurant_address_id": 3,
+      "role": "Manager",
+      "is_on_shift": false
+    },
+    {
+      "id": 15,
+      "first_name": "Oliver",
+      "last_name": "Peter",
+      "restaurant_address_id": 1,
+      "role": "Cooks",
+      "is_on_shift": true
+    },
+    {
+      "id": 8,
+      "first_name": "Julian",
+      "last_name": "Adler",
+      "restaurant_address_id": 2,
+      "role": "Cooks",
+      "is_on_shift": true
+    },
+    {
+      "id": 7,
+      "first_name": "Vivan",
+      "last_name": "Rutledge",
+      "restaurant_address_id": 3,
+      "role": "Cooks",
+      "is_on_shift": false
+    },
+    {
+      "id": 9,
+      "first_name": "Aaron",
+      "last_name": "Marker",
+      "restaurant_address_id": 3,
+      "role": "Cashier",
+      "is_on_shift": false
+    },
+    {
+      "id": 10,
+      "first_name": "Robert",
+      "last_name": "Gale",
+      "restaurant_address_id": 1,
+      "role": "Cashier",
+      "is_on_shift": true
+    },
+    {
+      "id": 19,
+      "first_name": "Jose",
+      "last_name": "Ramse",
+      "restaurant_address_id": 2,
+      "role": "Cashier",
+      "is_on_shift": false
+    },
+    {
+      "id": 17,
+      "first_name": "Marcus",
+      "last_name": "Whitley",
+      "restaurant_address_id": 1,
+      "role": "Cashier",
+      "is_on_shift": false
+    },
+    {
+      "id": 18,
+      "first_name": "Jonathan",
+      "last_name": "Foster",
+      "restaurant_address_id": 2,
+      "role": "Cashier",
+      "is_on_shift": true
+    },
+    {
+      "id": 2,
+      "first_name": "Kyle",
+      "last_name": "Slade",
+      "restaurant_address_id": 1,
+      "role": "Delivery",
+      "is_on_shift": true
+    },
+    {
+      "id": 13,
+      "first_name": "Hannah",
+      "last_name": "Jones",
+      "restaurant_address_id": 2,
+      "role": "Delivery",
+      "is_on_shift": true
+    },
+    {
+      "id": 12,
+      "first_name": "Henri",
+      "last_name": "Toussaint",
+      "restaurant_address_id": 3,
+      "role": "Delivery",
+      "is_on_shift": false
+    }
+  ],
+  "restaurant": [
+    {
+      "id": 1,
+      "address_id": 2,
+      "name": "West-VII_OCP",
+      "phone_nbr": "630-555-1511",
+      "is_open": true
+    },
+    {
+      "id": 2,
+      "address_id": 5,
+      "name": "Markridge-Group_Pizza",
+      "phone_nbr": "101-555-1579",
+      "is_open": true
+    },
+    {
+      "id": 3,
+      "address_id": 6,
+      "name": "Titan_OCP",
+      "phone_nbr": "510-555-1709",
+      "is_open": false
+    }
+  ],
+  "quantity_stocks": [
+    {
+      "ingredient_id": 1,
+      "restaurant_id": 1
+    },
+    {
+      "ingredient_id": 2,
+      "restaurant_id": 1
+    },
+    {
+      "ingredient_id": 3,
+      "restaurant_id": 1
+    },
+    {
+      "ingredient_id": 4,
+      "restaurant_id": 1
+    },
+    {
+      "ingredient_id": 5,
+      "restaurant_id": 1
+    },
+    {
+      "ingredient_id": 1,
+      "restaurant_id": 2
+    },
+    {
+      "ingredient_id": 2,
+      "restaurant_id": 2
+    },
+    {
+      "ingredient_id": 3,
+      "restaurant_id": 2
+    },
+    {
+      "ingredient_id": 4,
+      "restaurant_id": 2
+    },
+    {
+      "ingredient_id": 5,
+      "restaurant_id": 2
+    },
+    {
+      "ingredient_id": 1,
+      "restaurant_id": 3
+    },
+    {
+      "ingredient_id": 2,
+      "restaurant_id": 3
+    },
+    {
+      "ingredient_id": 3,
+      "restaurant_id": 3
+    },
+    {
+      "ingredient_id": 4,
+      "restaurant_id": 3
+    },
+    {
+      "ingredient_id": 5,
+      "restaurant_id": 3
+    }
+  ]
+}

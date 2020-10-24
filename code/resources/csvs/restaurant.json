@@ -1,0 +1,25 @@
+{
+    "restaurant": [
+      {
+        "id": 1,
+        "address_id": 2,
+        "name": "West-VII_OCP",
+        "phone_nbr": "630-555-1511",
+        "is_open": true
+      },
+      {
+        "id": 2,
+        "address_id": 5,
+        "name": "Markridge-Group_Pizza",
+        "phone_nbr": "101-555-1579",
+        "is_open": true
+      },
+      {
+        "id": 3,
+        "address_id": 6,
+        "name": "Titan_OCP",
+        "phone_nbr": "510-555-1709",
+        "is_open": false
+      }
+    ]
+  }
