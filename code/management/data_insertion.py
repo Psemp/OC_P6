@@ -15,3 +15,11 @@ def Insert_data(mycursor, ObjectList1, ObjectList2, cnx):
         product_values = (product.barcode, product.name, product.brand, product.stores, product.url, product.nutriscore, product.category_id[0])
         mycursor.execute(product_insertion, product_values)
     cnx.commit()
+
+
+def Better_insert_data(cursor, ObjectList, target_table, cols, val_names, cnx):
+    for element in ObjectList:
+        data_insertion = f"""INSERT INTO {target_table}
+        ({cols})
+        VALUES({vals})"""
+        vals = something
