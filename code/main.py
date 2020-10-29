@@ -1,20 +1,9 @@
 import psycopg2
 import json
 from functions.get_names import GetColumnNames, GetTableNames
+from management.data_insertion import Insert_data
 
-#Classes import
-from models.account import Account
-from models.address import Address
-from models.customer import Customer
-from models.ingredients import Ingredients
-from models.order import Order
-from models.order_history import Order_history
-from models.pizza import Pizza
-from models.quantity_stocks import Quantity_stocks
-from models.recipe import Recipe
-from models.restaurant import Restaurant
-from models.staff import Staff 
-#/Classes import
+from models import *
 
 cnx = psycopg2.connect(
     database="OC_P6_Test",
@@ -29,6 +18,8 @@ with open('resources/dataset.json') as f:
 
 pcursor = cnx.cursor()
 tablelist = GetTableNames(pcursor)
+classdict = {'account' : Account,'address' : Address,'customer' : Customer,'ingredients' : Ingredients,'order' : Order,
+'order_history' : Order_history,'pizza' : Pizza,'quantity_stocks' : Quantity_stocks,'recipe' : Recipe,'restaurant' : Restaurant,'staff' : Staff}
 
 # TEST
 # print(tablelist)
@@ -39,14 +30,18 @@ table_data_dict = {}
 for table in tablelist:
     table_data_dict[table] = GetColumnNames(pcursor,table)
 
-# for key in table_data_dict:
-#     print(key)
-#     print(table_data_dict[key])
+# for t in table_data_dict:
+#     print(t)
+#     print(table_data_dict[t])
 
-account_list = []
-
+# account_list = []
+# 
 for entry in dataset:
-    i = 0
-    print(entry)
-    while entry not Classlist[i]:
-        i = i + 1
+    # print(entry)
+    for key in classdict:
+        # print('test done')
+        if entry == key:
+            print('success')
+            classdict[key](dataset[entry])
+            
+        
