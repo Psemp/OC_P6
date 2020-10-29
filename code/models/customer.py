@@ -4,4 +4,4 @@ class Customer:
         self.ident = ident
         self.address_id = address_id
         self.first_name = first_name
-        self.last_name
+        self.last_name = last_name

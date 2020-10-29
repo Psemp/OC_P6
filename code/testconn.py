@@ -1,4 +1,5 @@
 import psycopg2
+from functions.get_names import GetColumnNames, GetTableNames
 
 cnx = psycopg2.connect(
     database="OC_P6_Test",
@@ -10,12 +11,27 @@ cnx = psycopg2.connect(
 
 pcursor = cnx.cursor()
 
-pcursor.execute("""SELECT *
-FROM pg_catalog.pg_tables
-    WHERE schemaname = 'oc_p6_test';""")
+def GetTableNamesOld(cursor):
 
-plist = []
-plist = pcursor.fetchall()
+    cursor.execute("""SELECT *
+    FROM pg_catalog.pg_tables
+        WHERE schemaname = 'oc_p6_test';""")
 
-for line in plist:
-    print(line)
+    plist = []
+    plist = cursor.fetchall()
+
+    for line in plist:
+        print(line[1])
+
+tablelist = GetTableNames(pcursor)
+
+#TEST
+print(tablelist)
+#/TEST
+
+table_data_dict = {}
+
+for table in tablelist:
+    table_data_dict[table] = GetColumnNames(pcursor,table)
+
+print (table_data_dict)
