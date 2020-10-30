@@ -1,7 +1,7 @@
 class Customer:
 
-    def __init__(self, ident, address_id, first_name, last_name):
-        self.ident = ident
-        self.address_id = address_id
-        self.first_name = first_name
-        self.last_name = last_name
+    def __init__(self, datadict):
+        self.ident = datadict['id']
+        self.address_id = datadict['address_id']
+        self.first_name = datadict['first_name']
+        self.last_name = datadict['last_name']

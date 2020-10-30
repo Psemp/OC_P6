@@ -42,6 +42,9 @@ for entry in dataset:
         # print('test done')
         if entry == key:
             print('success')
-            classdict[key](dataset[entry])
-            
+            for table_name in entry:
+                i = 0
+                print(dataset[entry][i].keys)
+                i =  i + 1
+        
         

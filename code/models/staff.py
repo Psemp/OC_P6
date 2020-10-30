@@ -1,9 +1,9 @@
 class Staff:
 
-    def __init__(self, ident, first_name, last_name, rest_id, role, on_shift):
-        self.ident = ident
-        self.first_name = first_name
-        self.last_name = last_name
-        self.restaurant_address_id = rest_id
-        self.role = role
-        self.is_on_shift = on_shift
+    def __init__(self, datadict):
+        self.ident = datadict['id']
+        self.first_name = datadict['first_name']
+        self.last_name = datadict['last_name']
+        self.restaurant_address_id = datadict['restaurant_address_id']
+        self.role = datadict['role']
+        self.is_on_shift = datadict['is_on_shift']

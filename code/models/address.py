@@ -1,10 +1,10 @@
 class Address:
 
-    def __init__(self, ident, strt_name, strt_nbr, city, zip_c, is_rest, cmnt):
-        self.ident = ident
-        self.strt_name = strt_name
-        self.strt_nbr = strt_nbr
-        self.city = city
-        self.zip = zip_c
-        self.rest = is_rest
-        self.comment = cmnt
+    def __init__(self, datadict):
+        self.ident = datadict['id']
+        self.strt_name = datadict['street_name']
+        self.strt_nbr = datadict['street_nbr']
+        self.city = datadict['city']
+        self.zip = datadict['zip']
+        self.rest = datadict['is_restaurant']
+        self.comment = datadict['comment']

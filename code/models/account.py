@@ -1,8 +1,8 @@
 class Account:
 
-    def __init__(self, ident, acc_type, phone, mail, pwd):
-        self.ident = ident
-        self.acc_type = acc_type
-        self.phone = phone
-        self.mail = mail
-        self.pwd = pwd
+    def __init__(self, datadict):
+        self.ident = datadict['id']
+        self.acc_type = datadict['type']
+        self.phone = datadict['phone_number']
+        self.mail = datadict['email']
+        self.pwd = datadict['pwd_hash']

@@ -1,7 +1,7 @@
 class Restaurant:
 
-    def __init__(self, address_id, name, phone, is_open):
-        self.address_id = address_id
-        self.name = name
-        self.phone = phone
-        self.is_open = is_open
+    def __init__(self, datadict):
+        self.address_id = datadict['id']
+        self.name = datadict['name']
+        self.phone = datadict['phone_nbr']
+        self.is_open = datadict['is_open']
