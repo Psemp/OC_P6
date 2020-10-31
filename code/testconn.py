@@ -11,6 +11,7 @@ cnx = psycopg2.connect(
 
 pcursor = cnx.cursor()
 
+
 def GetTableNamesOld(cursor):
 
     cursor.execute("""SELECT *
@@ -23,15 +24,16 @@ def GetTableNamesOld(cursor):
     for line in plist:
         print(line[1])
 
+
 tablelist = GetTableNames(pcursor)
 
-#TEST
+# TEST
 print(tablelist)
-#/TEST
+# /TEST
 
 table_data_dict = {}
 
 for table in tablelist:
-    table_data_dict[table] = GetColumnNames(pcursor,table)
+    table_data_dict[table] = GetColumnNames(pcursor, table)
 
-print (table_data_dict)
+print(table_data_dict)

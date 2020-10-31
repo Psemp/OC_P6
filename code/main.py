@@ -18,8 +18,16 @@ with open('resources/dataset.json') as f:
 
 pcursor = cnx.cursor()
 tablelist = GetTableNames(pcursor)
-classdict = {'account' : Account,'address' : Address,'customer' : Customer,'ingredients' : Ingredients,'order' : Order,
-'order_history' : Order_history,'pizza' : Pizza,'quantity_stocks' : Quantity_stocks,'recipe' : Recipe,'restaurant' : Restaurant,'staff' : Staff}
+classdict = {'account': Account, 'address': Address, 'customer': Customer,
+             'ingredients': Ingredients, 'order': Order,
+             'order_history': Order_history, 'pizza': Pizza,
+             'quantity_stocks': Quantity_stocks, 'recipe': Recipe,
+             'restaurant': Restaurant, 'staff': Staff}
+
+instancedict = {'account': [], 'address': [], 'customer': [], 'ingredients': [],
+                'order': [], 'order_history': [], 'pizza': [],
+                'quantity_stocks': [], 'recipe': [],
+                'restaurant': [], 'staff': []}
 
 # TEST
 # print(tablelist)
@@ -28,23 +36,21 @@ classdict = {'account' : Account,'address' : Address,'customer' : Customer,'ingr
 table_data_dict = {}
 
 for table in tablelist:
-    table_data_dict[table] = GetColumnNames(pcursor,table)
+    table_data_dict[table] = GetColumnNames(pcursor, table)
 
 # for t in table_data_dict:
 #     print(t)
 #     print(table_data_dict[t])
 
-# account_list = []
-# 
 for entry in dataset:
     # print(entry)
+
     for key in classdict:
         # print('test done')
         if entry == key:
-            print('success')
-            for table_name in entry:
-                i = 0
-                print(dataset[entry][i].keys)
-                i =  i + 1
-        
-        
+            for element in dataset[key]:
+                print(element)
+                instancedict[key].append((classdict[key](element)))
+                print('insertion done')
+
+print(instancedict['account'][0].phone)

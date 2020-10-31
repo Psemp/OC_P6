@@ -8,4 +8,4 @@ from .pizza import Pizza
 from .quantity_stocks import Quantity_stocks
 from .recipe import Recipe
 from .restaurant import Restaurant
-from .staff import Staff 
+from .staff import Staff

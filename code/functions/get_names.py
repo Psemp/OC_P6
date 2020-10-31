@@ -25,7 +25,7 @@ def GetColumnNames(cursor, target_table):
     cursor.execute(f"""SELECT column_name
         FROM information_schema.columns
         WHERE table_name = '{target_table}'""")
-    
+
     result = []
     result = cursor.fetchall()
 
