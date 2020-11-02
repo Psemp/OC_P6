@@ -1,6 +1,6 @@
 class Ingredients:
 
     def __init__(self, datadict):
-        self.ident = datadict['id']
+        self.id = datadict['id']
         self.name = datadict['name']
         self.price = datadict['price']

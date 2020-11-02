@@ -1,8 +1,7 @@
 
-def Insert_data(cursor, object_list, table_data_dict, cols, cnx):
-    for table in table_data_dict:
-        insertion_query = f"""INSERT INTO {table.key}
-            ({table})
-            VALUES({vals})"""
-        vals = 0
-        cursor.execute(insertion_query, vals)
+def Insert_data(cursor, target_table, values_dict, colunms_list, cnx):
+    insertion_query = f"""INSERT INTO {target_table}
+        ({colunms_list})
+        VALUES({vals})"""
+    vals = 0
+    cursor.execute(insertion_query, vals)

@@ -45,7 +45,33 @@ for entry in dataset:
         # print('test done')
         if entry == key:
             for element in dataset[key]:
-                print(element)
+                # print(element)
                 instancedict[key].append((classdict[key](element)))
-                print('insertion done')
-                print(type(classdict[key](element)))
+                # print('insertion done')
+                # print(type(classdict[key](element)))
+
+for classname in instancedict:
+    for t_name in table_data_dict:
+        if t_name == classname:
+            # print(table_data_dict[t_name], 'for table :', t_name)  # col list
+            idx = 0
+            column_list = table_data_dict[t_name]
+            values_list = []
+            values_dict = {}
+            # print(t_name, column_list)
+
+            for objects in instancedict[classname]:
+                for column in table_data_dict[t_name]:
+
+                    attr = getattr(instancedict[classname][idx], column)
+                    # print(attr)
+                    values_list.append(attr)
+                    if idx == len(instancedict[classname]):
+                        idx = idx - 1
+                        print('oor')
+                values_dict[idx] = values_list
+                print(values_dict)
+                # print(column_list)
+                idx = idx + 1
+
+            # print('\n')

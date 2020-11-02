@@ -25,9 +25,9 @@ def GetColumnNames(cursor, target_table):
     result = []
     result = cursor.fetchall()
 
-    columns = ''
+    columns = []
 
     for line in result:
-        columns = columns + line[0] + ', '
+        columns.append(line[0])
 
-    return columns[:-2]
+    return columns

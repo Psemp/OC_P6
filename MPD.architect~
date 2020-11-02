@@ -5,7 +5,7 @@
  <project-data-sources>
   <data-source id="DS0">
    <property key="Connection Type" value="MySQL" />
-   <property key="Logical" value="PlayPen Database" />
+   <property key="Logical" value="(Target Database)" />
    <property key="JDBC URL" value="jdbc:mysql://localhost:3306/OC_P6_Test" />
    <property key="UID" value="root" />
    <property key="PWD" value="06022018" />
@@ -318,48 +318,48 @@
    </folder>
   </table>
   <relationships>
-   <relationship id="REL84" populated="true" UUID="471b2a0a-28f2-461d-9836-e19c3a2d6c9f" deferrability="7" deleteRule="3" fk-table-ref="TAB56" fkCardinality="7" identifying="true" name="Account_Staff_fk" physicalName="Account_Staff_fk" pk-table-ref="TAB8" pkCardinality="2" updateRule="3" >
+   <relationship id="REL84" populated="true" UUID="471b2a0a-28f2-461d-9836-e19c3a2d6c9f" deferrability="7" deleteRule="3" fk-table-ref="TAB56" fkCardinality="7" identifying="true" name="Account_Staff_fk" physicalName="account_staff_fk" pk-table-ref="TAB8" pkCardinality="2" updateRule="3" >
     <column-mapping id="CMP85" populated="true" UUID="2439c305-0847-48e0-958b-aefd8e08c0c4" fk-column-ref="COL57" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL9" />
    </relationship>
-   <relationship id="REL86" populated="true" UUID="098fbfd3-6345-45a9-9b91-5fcf35abfd65" deferrability="7" deleteRule="3" fk-table-ref="TAB1" fkCardinality="7" identifying="true" name="Account_Customer_fk" physicalName="Account_Customer_fk" pk-table-ref="TAB8" pkCardinality="2" updateRule="3" >
+   <relationship id="REL86" populated="true" UUID="098fbfd3-6345-45a9-9b91-5fcf35abfd65" deferrability="7" deleteRule="3" fk-table-ref="TAB1" fkCardinality="7" identifying="true" name="Account_Customer_fk" physicalName="account_customer_fk" pk-table-ref="TAB8" pkCardinality="2" updateRule="3" >
     <column-mapping id="CMP87" populated="true" UUID="4f365cc9-4150-4a7d-8084-006de47cfa12" fk-column-ref="COL2" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL9" />
    </relationship>
-   <relationship id="REL88" populated="true" UUID="fb62e03d-6578-4e30-bc6b-853c7b2f3abd" deferrability="7" deleteRule="3" fk-table-ref="TAB65" fkCardinality="7" identifying="true" name="Account_Order_history_fk" physicalName="Account_Order_history_fk" pk-table-ref="TAB8" pkCardinality="2" updateRule="3" >
+   <relationship id="REL88" populated="true" UUID="fb62e03d-6578-4e30-bc6b-853c7b2f3abd" deferrability="7" deleteRule="3" fk-table-ref="TAB65" fkCardinality="7" identifying="true" name="Account_Order_history_fk" physicalName="account_order_history_fk" pk-table-ref="TAB8" pkCardinality="2" updateRule="3" >
     <column-mapping id="CMP89" populated="true" UUID="72d0c93c-f145-4bee-b90b-788c73e7a791" fk-column-ref="COL66" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL9" />
    </relationship>
-   <relationship id="REL90" populated="true" UUID="ffc78b2f-51d3-41d9-a5a4-967af4e81466" deferrability="7" deleteRule="3" fk-table-ref="TAB65" fkCardinality="7" identifying="true" name="Order_Order_history_fk" physicalName="Order_Order_history_fk" pk-table-ref="TAB16" pkCardinality="2" updateRule="3" >
+   <relationship id="REL90" populated="true" UUID="ffc78b2f-51d3-41d9-a5a4-967af4e81466" deferrability="7" deleteRule="3" fk-table-ref="TAB65" fkCardinality="7" identifying="true" name="Order_Order_history_fk" physicalName="order_order_history_fk" pk-table-ref="TAB16" pkCardinality="2" updateRule="3" >
     <column-mapping id="CMP91" populated="true" UUID="de122d9e-543e-41a3-9dae-d023477020a3" fk-column-ref="COL67" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL17" />
    </relationship>
-   <relationship id="REL92" populated="true" UUID="559cb190-1ea0-4eff-ae38-ccef5e185f53" deferrability="7" deleteRule="3" fk-table-ref="TAB77" fkCardinality="7" identifying="true" name="Pizza_Recipe_fk" physicalName="Pizza_Recipe_fk" pk-table-ref="TAB26" pkCardinality="2" updateRule="3" >
+   <relationship id="REL92" populated="true" UUID="559cb190-1ea0-4eff-ae38-ccef5e185f53" deferrability="7" deleteRule="3" fk-table-ref="TAB77" fkCardinality="7" identifying="true" name="Pizza_Recipe_fk" physicalName="pizza_recipe_fk" pk-table-ref="TAB26" pkCardinality="2" updateRule="3" >
     <column-mapping id="CMP93" populated="true" UUID="3eba0b6d-3a91-41e2-95fb-3cf197dd85c4" fk-column-ref="COL78" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL27" />
    </relationship>
-   <relationship id="REL94" populated="true" UUID="07021d30-6f2c-47d6-a39f-4ce173071f71" deferrability="7" deleteRule="3" fk-table-ref="TAB16" fkCardinality="7" identifying="true" name="Pizza_Order_fk" physicalName="Pizza_Order_fk" pk-table-ref="TAB26" pkCardinality="2" updateRule="3" >
+   <relationship id="REL94" populated="true" UUID="07021d30-6f2c-47d6-a39f-4ce173071f71" deferrability="7" deleteRule="3" fk-table-ref="TAB16" fkCardinality="7" identifying="true" name="Pizza_Order_fk" physicalName="pizza_order_fk" pk-table-ref="TAB26" pkCardinality="2" updateRule="3" >
     <column-mapping id="CMP95" populated="true" UUID="6d7abd83-6d28-44c6-944a-3499e244fd7a" fk-column-ref="COL18" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL27" />
    </relationship>
-   <relationship id="REL96" populated="true" UUID="88d1ba4e-1688-4ec9-8298-9eeff6d325bc" deferrability="7" deleteRule="3" fk-table-ref="TAB71" fkCardinality="7" identifying="true" name="Ingredients_Quantity_stocks_fk" physicalName="Ingredients_Quantity_stocks_fk" pk-table-ref="TAB32" pkCardinality="2" updateRule="3" >
+   <relationship id="REL96" populated="true" UUID="88d1ba4e-1688-4ec9-8298-9eeff6d325bc" deferrability="7" deleteRule="3" fk-table-ref="TAB71" fkCardinality="7" identifying="true" name="Ingredients_Quantity_stocks_fk" physicalName="ingredients_quantity_stocks_fk" pk-table-ref="TAB32" pkCardinality="2" updateRule="3" >
     <column-mapping id="CMP97" populated="true" UUID="fe622cdf-43db-4448-bf25-3accff9999a7" fk-column-ref="COL73" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL33" />
    </relationship>
-   <relationship id="REL98" populated="true" UUID="3be6c13e-f0ce-411c-b459-b5ae58988ad5" deferrability="7" deleteRule="3" fk-table-ref="TAB77" fkCardinality="7" identifying="true" name="Ingredients_Recipe_fk" physicalName="Ingredients_Recipe_fk" pk-table-ref="TAB32" pkCardinality="2" updateRule="3" >
+   <relationship id="REL98" populated="true" UUID="3be6c13e-f0ce-411c-b459-b5ae58988ad5" deferrability="7" deleteRule="3" fk-table-ref="TAB77" fkCardinality="7" identifying="true" name="Ingredients_Recipe_fk" physicalName="ingredients_recipe_fk" pk-table-ref="TAB32" pkCardinality="2" updateRule="3" >
     <column-mapping id="CMP99" populated="true" UUID="61b0fd63-0c94-4b53-89f3-34dd1e75720b" fk-column-ref="COL79" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL33" />
    </relationship>
-   <relationship id="REL100" populated="true" UUID="f1acd3fd-23a5-4768-857f-5cde2987c5a1" deferrability="7" deleteRule="3" fk-table-ref="TAB56" fkCardinality="7" identifying="true" name="Restaurant_Staff_fk" physicalName="Restaurant_Staff_fk" pk-table-ref="TAB38" pkCardinality="2" updateRule="3" >
+   <relationship id="REL100" populated="true" UUID="f1acd3fd-23a5-4768-857f-5cde2987c5a1" deferrability="7" deleteRule="3" fk-table-ref="TAB56" fkCardinality="7" identifying="true" name="Restaurant_Staff_fk" physicalName="restaurant_staff_fk" pk-table-ref="TAB38" pkCardinality="2" updateRule="3" >
     <column-mapping id="CMP101" populated="true" UUID="cd49d2dd-8930-471e-b60b-91c321f5ff41" fk-column-ref="COL58" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL39" />
    </relationship>
-   <relationship id="REL102" populated="true" UUID="068e3510-04d9-408f-9bbc-cf8e72ea38cb" deferrability="7" deleteRule="3" fk-table-ref="TAB71" fkCardinality="7" identifying="true" name="Restaurant_Quantity_stocks_fk" physicalName="Restaurant_Quantity_stocks_fk" pk-table-ref="TAB38" pkCardinality="2" updateRule="3" >
+   <relationship id="REL102" populated="true" UUID="068e3510-04d9-408f-9bbc-cf8e72ea38cb" deferrability="7" deleteRule="3" fk-table-ref="TAB71" fkCardinality="7" identifying="true" name="Restaurant_Quantity_stocks_fk" physicalName="restaurant_quantity_stocks_fk" pk-table-ref="TAB38" pkCardinality="2" updateRule="3" >
     <column-mapping id="CMP103" populated="true" UUID="3b484599-f58c-44f0-8557-2c3e84c8ec03" fk-column-ref="COL72" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL39" />
    </relationship>
-   <relationship id="REL104" populated="true" UUID="bbdba61b-dbbe-46df-91af-f452b1687fc1" deferrability="7" deleteRule="3" fk-table-ref="TAB1" fkCardinality="7" identifying="true" name="Address_Customer_fk" physicalName="Address_Customer_fk" pk-table-ref="TAB46" pkCardinality="2" updateRule="3" >
+   <relationship id="REL104" populated="true" UUID="bbdba61b-dbbe-46df-91af-f452b1687fc1" deferrability="7" deleteRule="3" fk-table-ref="TAB1" fkCardinality="7" identifying="true" name="Address_Customer_fk" physicalName="address_customer_fk" pk-table-ref="TAB46" pkCardinality="2" updateRule="3" >
     <column-mapping id="CMP105" populated="true" UUID="78814775-0bc1-40bd-be93-e47c77169fd4" fk-column-ref="COL3" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL47" />
    </relationship>
-   <relationship id="REL106" populated="true" UUID="78c10a19-8380-4129-84a2-b4d8c94cfb78" deferrability="7" deleteRule="3" fk-table-ref="TAB38" fkCardinality="7" identifying="true" name="Address_Restaurant_fk" physicalName="Address_Restaurant_fk" pk-table-ref="TAB46" pkCardinality="2" updateRule="3" >
+   <relationship id="REL106" populated="true" UUID="78c10a19-8380-4129-84a2-b4d8c94cfb78" deferrability="7" deleteRule="3" fk-table-ref="TAB38" fkCardinality="7" identifying="true" name="Address_Restaurant_fk" physicalName="address_restaurant_fk" pk-table-ref="TAB46" pkCardinality="2" updateRule="3" >
     <column-mapping id="CMP107" populated="true" UUID="647482e7-a3ae-48e3-af8b-00000f6dd74b" fk-column-ref="COL40" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL47" />
    </relationship>
   </relationships>
  </target-database>
- <ddl-generator type="ca.sqlpower.architect.ddl.PostgresDDLGenerator" allow-connection="true" target-schema="OC_P6_Test"> </ddl-generator>
+ <ddl-generator type="ca.sqlpower.architect.ddl.PostgresDDLGenerator" allow-connection="false" target-schema="OC_P6_Test"> </ddl-generator>
  <liquibase-settings useSeparateChangeSets="false" generateId="false" idStart="1"/>
  <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
- <play-pen zoom="1.1892071150027208" viewportX="0" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
+ <play-pen zoom="0.9999999999999998" viewportX="0" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
   <table-pane table-ref="TAB1" x="67" y="166" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-pane table-ref="TAB8" x="392" y="164" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-pane table-ref="TAB16" x="962" y="137" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
