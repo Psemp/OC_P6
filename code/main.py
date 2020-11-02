@@ -38,10 +38,6 @@ table_data_dict = {}
 for table in tablelist:
     table_data_dict[table] = GetColumnNames(pcursor, table)
 
-# for t in table_data_dict:
-#     print(t)
-#     print(table_data_dict[t])
-
 for entry in dataset:
     # print(entry)
 
@@ -52,5 +48,4 @@ for entry in dataset:
                 print(element)
                 instancedict[key].append((classdict[key](element)))
                 print('insertion done')
-
-print(instancedict['account'][0].phone)
+                print(type(classdict[key](element)))

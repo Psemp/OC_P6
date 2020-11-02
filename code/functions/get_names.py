@@ -9,10 +9,6 @@ def GetTableNames(cursor):
     result = cursor.fetchall()
 
     table_list = []
-#     Test#
-#    for line in result:
-#        print(line[1])
-#     /Test#
 
     for line in result:
         table_list.append(line[1])
@@ -30,11 +26,6 @@ def GetColumnNames(cursor, target_table):
     result = cursor.fetchall()
 
     columns = ''
-
-#    Test
-#   for line in result:
-#       print(line[0])
-#    /Test
 
     for line in result:
         columns = columns + line[0] + ', '
