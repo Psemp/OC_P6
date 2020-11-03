@@ -5,10 +5,12 @@ from management.data_insertion import Insert_data
 
 from models import *
 
+usr_pwd = input("Please enter password : ")
+
 cnx = psycopg2.connect(
     database="OC_P6_Test",
     user="postgres",
-    password="destroy-whenever-nature-medieval",
+    password=usr_pwd,
     host="localhost",
     port="5432",
 )
@@ -56,11 +58,13 @@ for classname in instancedict:
             # print(table_data_dict[t_name], 'for table :', t_name)  # col list
             idx = 0
             column_list = table_data_dict[t_name]
-            values_list = []
             values_dict = {}
             # print(t_name, column_list)
 
             for objects in instancedict[classname]:
+
+                values_list = []
+
                 for column in table_data_dict[t_name]:
 
                     attr = getattr(instancedict[classname][idx], column)
@@ -69,9 +73,9 @@ for classname in instancedict:
                     if idx == len(instancedict[classname]):
                         idx = idx - 1
                         print('oor')
-                values_dict[idx] = values_list
-                print(values_dict)
-                # print(column_list)
+                print(t_name)
+                print(values_list)
+                print(column_list, '\n')
+                Insert_data(pcursor, t_name, values_list, column_list, cnx)
                 idx = idx + 1
-
-            # print('\n')
+# print('\n')

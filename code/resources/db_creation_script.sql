@@ -1,8 +1,12 @@
+DROP SCHEMA IF EXISTS oc_p6_test CASCADE;
+
+CREATE SCHEMA IF NOT EXISTS oc_p6_test;
+
 
 CREATE TABLE OC_P6_Test.Address (
                 id INTEGER NOT NULL,
                 street_name VARCHAR NOT NULL,
-                street_number SMALLINT NOT NULL,
+                street_number INTEGER NOT NULL,
                 city VARCHAR NOT NULL,
                 zip_code INTEGER NOT NULL,
                 is_restaurant BOOLEAN NOT NULL,
@@ -15,14 +19,14 @@ CREATE TABLE OC_P6_Test.Restaurant (
                 id INTEGER NOT NULL,
                 address_id INTEGER NOT NULL,
                 name VARCHAR NOT NULL,
-                phone_number INTEGER NOT NULL,
+                phone_number VARCHAR NOT NULL,
                 is_open BOOLEAN NOT NULL,
                 CONSTRAINT restaurant_pk PRIMARY KEY (id)
 );
 
 
 CREATE TABLE OC_P6_Test.Ingredients (
-                id INTEGER NOT NULL,
+                id VARCHAR NOT NULL,
                 name VARCHAR NOT NULL,
                 price REAL NOT NULL,
                 CONSTRAINT ingredients_pk PRIMARY KEY (id)
@@ -31,13 +35,13 @@ CREATE TABLE OC_P6_Test.Ingredients (
 
 CREATE TABLE OC_P6_Test.Quantity_stocks (
                 restaurant_id INTEGER NOT NULL,
-                ingredient_id INTEGER NOT NULL,
+                ingredient_id VARCHAR NOT NULL,
                 CONSTRAINT quantity_stocks_pk PRIMARY KEY (restaurant_id, ingredient_id)
 );
 
 
 CREATE TABLE OC_P6_Test.Pizza (
-                id INTEGER NOT NULL,
+                id VARCHAR NOT NULL,
                 name VARCHAR NOT NULL,
                 price REAL NOT NULL,
                 CONSTRAINT pizza_pk PRIMARY KEY (id)
@@ -45,8 +49,8 @@ CREATE TABLE OC_P6_Test.Pizza (
 
 
 CREATE TABLE OC_P6_Test.Recipe (
-                pizza_id INTEGER NOT NULL,
-                ingredient_id INTEGER NOT NULL,
+                pizza_id VARCHAR NOT NULL,
+                ingredient_id VARCHAR NOT NULL,
                 recipe_webpage VARCHAR NOT NULL,
                 CONSTRAINT recipe_pk PRIMARY KEY (pizza_id, ingredient_id)
 );
@@ -54,7 +58,7 @@ CREATE TABLE OC_P6_Test.Recipe (
 
 CREATE TABLE OC_P6_Test.Order (
                 id INTEGER NOT NULL,
-                pizza_id INTEGER NOT NULL,
+                pizza_id VARCHAR NOT NULL,
                 date_ordered TIMESTAMP NOT NULL,
                 is_paid BOOLEAN NOT NULL,
                 is_delivery BOOLEAN NOT NULL,
@@ -67,7 +71,7 @@ CREATE TABLE OC_P6_Test.Order (
 CREATE TABLE OC_P6_Test.Account (
                 id INTEGER NOT NULL,
                 type VARCHAR NOT NULL,
-                phone_number INTEGER NOT NULL,
+                phone_number VARCHAR NOT NULL,
                 email VARCHAR NOT NULL,
                 password_hash TEXT NOT NULL,
                 CONSTRAINT account_pk PRIMARY KEY (id)

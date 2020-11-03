@@ -196,7 +196,7 @@
       "city": "Washington DC",
       "zip": 20510,
       "is_restaurant": false,
-      "comment": "Senator Royce's office"
+      "comment": "Senator Royce office"
     },
     {
       "id": 8,
@@ -249,22 +249,22 @@
     {
       "id": 2,
       "name": "cheese",
-      "price": "1,2"
+      "price": "1.2"
     },
     {
       "id": 3,
       "name": "ham",
-      "price": "1,6"
+      "price": "1.6"
     },
     {
       "id": 4,
       "name": "olives",
-      "price": "1,5"
+      "price": "1.5"
     },
     {
       "id": 5,
       "name": "cream",
-      "price": "1,9"
+      "price": "1.9"
     }
   ],
   "order": [

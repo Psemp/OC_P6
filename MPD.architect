@@ -5,7 +5,7 @@
  <project-data-sources>
   <data-source id="DS0">
    <property key="Connection Type" value="MySQL" />
-   <property key="Logical" value="(Target Database)" />
+   <property key="Logical" value="PlayPen Database" />
    <property key="JDBC URL" value="jdbc:mysql://localhost:3306/OC_P6_Test" />
    <property key="UID" value="root" />
    <property key="PWD" value="06022018" />
@@ -54,7 +54,7 @@
     <column id="COL10" populated="true" UUID="0ead29cf-152e-4206-833d-aefd034ed996" autoIncrement="false" autoIncrementSequenceName="Account_type_seq" defaultValue="" name="type" nullable="0" physicalName="type" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
-    <column id="COL11" populated="true" UUID="29935497-e88a-4df0-8957-932d6736e56a" autoIncrement="false" autoIncrementSequenceName="Account_phone_number_seq" defaultValue="" name="phone_number" nullable="0" physicalName="phone_number" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+    <column id="COL11" populated="true" UUID="29935497-e88a-4df0-8957-932d6736e56a" autoIncrement="false" autoIncrementSequenceName="Account_phone_number_seq" defaultValue="" name="phone_number" nullable="0" physicalName="phone_number" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
     <column id="COL12" populated="true" UUID="5af91d2e-6fb6-4def-8d15-52f52cbaa6d0" autoIncrement="false" autoIncrementSequenceName="Account_email_seq" defaultValue="" name="email" nullable="0" physicalName="email" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
@@ -80,7 +80,7 @@
     <column id="COL17" populated="true" UUID="7aac17e4-f796-4485-9533-6d9d07bc4690" autoIncrement="false" autoIncrementSequenceName="Order_number_seq" defaultValue="" name="id" nullable="0" physicalName="id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
-    <column id="COL18" populated="true" UUID="53d37c4f-f365-4f3b-9ac5-3e891520e4ab" autoIncrement="false" autoIncrementSequenceName="Pizza_id_seq" defaultValue="" name="pizza_id" nullable="0" physicalName="pizza_id" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+    <column id="COL18" populated="true" UUID="53d37c4f-f365-4f3b-9ac5-3e891520e4ab" autoIncrement="false" autoIncrementSequenceName="Pizza_id_seq" defaultValue="" name="pizza_id" nullable="0" physicalName="pizza_id" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
     <column id="COL19" populated="true" UUID="352bee56-d64d-44a6-96be-5bb416a6bf19" autoIncrement="false" autoIncrementSequenceName="Order_date_ordered_seq" defaultValue="" name="date_ordered" nullable="0" physicalName="date_ordered" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="93" userDefinedTypeUUID="6497d8de-0e00-40d6-a42e-e2adca83be64" >
@@ -112,7 +112,7 @@
   <table id="TAB26" populated="true" UUID="ea7dfee3-5cb3-4d05-bdda-edcb221c9f08" name="Pizza" objectType="TABLE" physicalName="Pizza" >
    <remarks></remarks>
    <folder id="FOLTAB261" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL27" populated="true" UUID="ff1f6bed-7060-4cef-8e2d-d407275d9af7" autoIncrement="false" autoIncrementSequenceName="Pizza_id_seq" defaultValue="" name="id" nullable="0" physicalName="id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+    <column id="COL27" populated="true" UUID="ff1f6bed-7060-4cef-8e2d-d407275d9af7" autoIncrement="false" autoIncrementSequenceName="Pizza_id_seq" defaultValue="" name="id" nullable="0" physicalName="id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
     <column id="COL28" populated="true" UUID="eb881209-7b0b-4452-b634-04ce6394b731" autoIncrement="false" autoIncrementSequenceName="Pizza_name_seq" defaultValue="" name="name" nullable="0" physicalName="name" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
@@ -167,7 +167,7 @@
     <column id="COL41" populated="true" UUID="15df42f2-fc8e-49ee-827f-5d0365fda034" autoIncrement="false" autoIncrementSequenceName="Restaurant_name_seq" defaultValue="" name="name" nullable="0" physicalName="name" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
-    <column id="COL42" populated="true" UUID="043b292e-bd42-451e-b410-453c21247d53" autoIncrement="false" autoIncrementSequenceName="Restaurant_phone_number_seq" defaultValue="" name="phone_number" nullable="0" physicalName="phone_number" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+    <column id="COL42" populated="true" UUID="043b292e-bd42-451e-b410-453c21247d53" autoIncrement="false" autoIncrementSequenceName="Restaurant_phone_number_seq" defaultValue="" name="phone_number" nullable="0" physicalName="phone_number" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
     <column id="COL43" populated="true" UUID="8be51008-061b-4420-9277-1705f95db4a7" autoIncrement="false" autoIncrementSequenceName="Restaurant_is_open_seq" defaultValue="" name="is_open" nullable="0" physicalName="is_open" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="16" userDefinedTypeUUID="a26374aa-3026-4bb8-b564-eb2e186dfa5d" >
@@ -296,7 +296,7 @@
   <table id="TAB77" populated="true" UUID="d1558ff4-8e22-4958-8b78-c041185a9834" name="Recipe" objectType="TABLE" physicalName="Recipe" >
    <remarks></remarks>
    <folder id="FOLTAB771" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL78" populated="true" UUID="86ca8500-07bb-407c-bfd5-56d18b2c93e2" autoIncrement="false" autoIncrementSequenceName="Pizza_id_seq" defaultValue="" name="pizza_id" nullable="0" physicalName="pizza_id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+    <column id="COL78" populated="true" UUID="86ca8500-07bb-407c-bfd5-56d18b2c93e2" autoIncrement="false" autoIncrementSequenceName="Pizza_id_seq" defaultValue="" name="pizza_id" nullable="0" physicalName="pizza_id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
     <column id="COL79" populated="true" UUID="32fba6ab-2352-4c00-b54a-d13012e03013" autoIncrement="false" autoIncrementSequenceName="Ingredients_id_seq" defaultValue="" name="ingredient_id" nullable="0" physicalName="ingredient_id" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
@@ -367,7 +367,7 @@
   <table-pane table-ref="TAB32" x="1367" y="522" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-pane table-ref="TAB38" x="678" y="501" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-pane table-ref="TAB46" x="74" y="485" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB56" x="389" y="337" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB56" x="393" y="338" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-pane table-ref="TAB65" x="635" y="50" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-pane table-ref="TAB71" x="1019" y="567" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-pane table-ref="TAB77" x="1427" y="360" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
