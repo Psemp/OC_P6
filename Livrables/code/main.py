@@ -57,7 +57,7 @@ for classname in instancedict:
             column_list = table_data_dict[t_name]
             values_dict = {}
 
-            for item in instancedict[classname]:
+            for objects in instancedict[classname]:
 
                 values_list = []
 
